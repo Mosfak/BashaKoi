@@ -14,15 +14,15 @@
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form  action="home.html" class="sign-in-form">
+          <form  action="php/loginaction.php" class="sign-in-form" method="post">
             <h2 class="title">Sign in</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Username" name="usr" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Password" name="pass" />
             </div>
             <input type="submit" value="Login" class="btn solid" />
             <p class="social-text">Or Sign in with social platforms</p>
@@ -41,19 +41,19 @@
               </a>
             </div>
           </form>
-          <form  action="index.html" class="sign-up-form">
+          <form  action="php/signupaction.php" class="sign-up-form" method="post">
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Username" name="usr" />
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="Email" name="email"/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Password" name="pass"/>
             </div>
             <input src="home.html" type="submit" class="btn" value="Sign up" />
             <p class="social-text">Or Sign up with social platforms</p>
