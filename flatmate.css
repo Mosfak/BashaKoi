@@ -1,0 +1,261 @@
+
+@import 'utilities.css';
+
+html{
+
+    scroll-behavior: smooth;
+}
+
+
+
+body{
+
+    font-family: 'Poppins'; 
+    
+    
+   
+}
+
+
+:root{
+
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --tenary:#898989;
+    --light:#f1e9e9;
+    --secondary:#070606;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --webkit-font-smoothing:antialiased;  
+}
+header{
+
+    background: url(./images/Rectangle\ 67\ \(1\).png);
+    /* clip-path: polygon(0 0,100% 0,100% 100%,70% 87%, 0 100%); */
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+} 
+.container{
+
+    max-width: 1000px;
+    height: 700px;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+} 
+.one{
+
+    text-align: center;
+    font-family: Lobster;
+    font-size: 2rem;
+   }
+
+
+header nav .left a{
+
+    color: var(--dark);
+    text-decoration: none;
+    margin-right:2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    padding-left: 60px;
+    font-weight: 700;
+}
+header nav .left a:hover{
+
+    color: var(--tenary);
+}
+header nav{
+
+    padding: 2rem 0;
+}
+header nav .branding a {
+
+    margin-right: 3rem;
+}
+.btn{
+
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease;
+
+}
+.btn-primary{
+
+    background: var(--pure);
+    color: var(--dark);
+}
+.btn-primary:hover{
+
+    background: transparent;
+    border-color: var(--dark);
+    color: var(--dark);
+}
+.hero .left img{
+
+    width:400px;
+
+}
+.hero  .right{
+
+    color: var(--pure);
+    margin-top: -7rem;
+}
+.hero .right h6{
+
+    font-size: 1.6rem;
+    color: var(--dark);
+    margin-bottom: 0.6rem;
+
+     
+}
+.hero .right h1{
+
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .right h1 span{
+
+    color: var(--dark);
+}
+.hero .right p{
+
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+}
+.btn-secondary{
+
+    background: transparent;
+    color: var(--secondary);
+    border: 2px solid var(--primary);
+}
+.btn-secondary:hover{
+
+    background:transparent;
+    color:var(--pure);
+}
+.flex-1{
+
+    flex:1;
+}
+.justify-center{
+
+    justify-content: center;
+}
+section {
+
+    padding: 6rem 0;
+}
+
+
+.section-heading{
+
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+.section-heading span{
+
+    color: var(--primary);
+}
+.section-heading + p{
+
+    color: var(--tenary);
+    font-family: Lato;
+    margin-bottom: 8rem;
+    text-align: center ;
+}
+section.services{
+
+    background: var(--light);
+    height: 1600px;
+}
+section.services .card-wrapper .card button{
+
+    margin-top: 2rem;
+
+}
+section.services .card-wrapper{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 5rem;
+}
+section.services .card-wrapper .card{
+
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 6rem;
+    text-align: center;
+    transition: all .3s ease;
+
+}
+section.services .card-wrapper .card img{
+
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+}
+section.services .card-wrapper .card h2{
+
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+section.services .card-wrapper .card p{
+
+    font-family: Lato;
+    color: var(--tenary);
+    line-height: 1.6rem;
+
+}
+section.services .card-wrapper .card:hover{
+
+    background: var(--dark);
+}
+section.services .card-wrapper .card:hover h2,section.services .card-wrapper .card:hover p{
+
+    color: var(--pure);
+}
+
+footer{
+
+    background: var(--primary);
+    text-align: center;
+    padding:  5rem 0;
+}
+footer  .footer-logo{
+
+    margin-bottom: 3rem;
+    width: 150px;
+}
+   
+footer .footer-social{
+
+    margin-bottom: 3rem;
+    margin-right: -1rem;
+}
+footer .Copyright{
+
+    color: var(--dark);
+}
